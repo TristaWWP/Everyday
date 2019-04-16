@@ -8,7 +8,7 @@ public:
         ListNode* cur = head;
         while (cur) {
             ListNode* p = cur->next;//cur跟p依次后移
-            cur->next = pre;//箭头转过来，类似交换两数的
+            cur->next = pre;//箭头转过来，类似交换两数
             pre = cur;
             cur = p;
         }
