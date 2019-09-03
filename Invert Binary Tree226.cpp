@@ -50,6 +50,7 @@ TreeNode* invertTree1(TreeNode *root)
     root->left = invertTree1(right);
     root->right = invertTree1(left);
     return root;
+    
 }
 TreeNode* invertTree2(TreeNode *root)
 {
